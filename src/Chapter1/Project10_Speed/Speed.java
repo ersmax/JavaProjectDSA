@@ -19,7 +19,8 @@ public class Speed {
 
         double runnerDistanceMiles = runnerDistance / KM_PER_MILE;
         int totSecondsRun = minutesRun * 60 + secondsRun;
-        double speedMilesHour = (runnerDistanceMiles * (double)SECONDS_HOUR) / totSecondsRun;
+        double hoursRun = totSecondsRun / (double)SECONDS_HOUR;
+        double speedMilesHour = runnerDistanceMiles / hoursRun;
         System.out.println("Tot mph = " + speedMilesHour);
     }
 }
