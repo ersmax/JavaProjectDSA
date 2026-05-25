@@ -54,6 +54,7 @@ public class Projection {
             nextDeathWait = deathRate - ((SECONDS_PER_YEAR - nextDeathWait) % deathRate);
             nextImmigrantWait = immigrantRate - ((SECONDS_PER_YEAR - nextImmigrantWait) % immigrantRate);
 
+            // Next year we don't have time left for the first event, so we reset it to 0
             if (nextBirthWait == birthRate) nextBirthWait = 0;
             if (nextDeathWait == deathRate) nextDeathWait = 0;
             if (nextImmigrantWait == immigrantRate) nextImmigrantWait = 0;
