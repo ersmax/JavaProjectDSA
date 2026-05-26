@@ -30,7 +30,6 @@ import java.text.DecimalFormat;
  *   year in the studied period.
  */
 public class Projection {
-    public static final int DAYS = 365;
     public static final int SECONDS_PER_YEAR = 365 * 24 * 60 * 60;
 
     public static void main(String[] args) {
